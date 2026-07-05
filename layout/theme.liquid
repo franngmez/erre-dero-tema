@@ -1,14 +1,17 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>{{ page_title }}</title>
   {{ content_for_header }}
+  <!-- CDN de Tailwind para los estilos de ErredeRo -->
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-  <main role="main">
-    {{ content_for_layout }}
-  </main>
+<body class="bg-white text-foreground antialiased">
+  
+  <!-- Aquí es donde Shopify inyectará tus bloques modulares -->
+  {{ content_for_layout }}
+
 </body>
 </html>
